@@ -1,0 +1,13 @@
+ID,Title,Steps,Expected Result,Actual Result,Status
+TC01,Login with valid credentials,"1. Open login page 2. Enter valid email 3. Enter valid password 4. Click Login",User is taken to the dashboard,,Not run
+TC02,Login with wrong password,"1. Open login page 2. Enter valid email 3. Enter wrong password 4. Click Login",Error message: Invalid email or password,,Not run
+TC03,Login with unregistered email,"1. Open login page 2. Enter unregistered email 3. Enter any password 4. Click Login",Error message: Invalid email or password,,Not run
+TC04,Login with empty fields,"1. Open login page 2. Leave both fields empty 3. Click Login",Required field messages are shown,,Not run
+TC05,Login with empty password,"1. Enter valid email 2. Leave password empty 3. Click Login",Password required message is shown,,Not run
+TC06,Email format validation,"1. Enter abc.com as email 2. Enter any password 3. Click Login",Invalid email format message is shown,,Not run
+TC07,Password is hidden,"1. Type a password in the password field",Characters are shown as dots,,Not run
+TC08,Show password toggle,"1. Type a password 2. Click the eye icon",Password becomes visible,,Not run
+TC09,Account lock after failed attempts,"1. Enter wrong password 5 times",Account is locked or captcha appears,,Not run
+TC10,Forgot password link,"1. Click Forgot password",Reset password page opens,,Not run
+TC11,Login with Enter key,"1. Fill valid details 2. Press Enter",User is logged in,,Not run
+TC12,SQL injection attempt,"1. Enter ' OR 1=1 -- in email field 2. Click Login",Login fails and no error details are exposed,,Not run
